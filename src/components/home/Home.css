@@ -1,0 +1,48 @@
+.image {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.description {
+    display: flex;
+    width: 100%;
+    justify-content: center;    
+}
+
+#principalArticle .image img{
+    width: 30%;
+}
+
+#principalArticle .description{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    background-color: rgba(246, 218, 219, 0.8);
+    text-align: justify;
+    padding: 1vh;
+    align-items: center;
+    overflow: auto;
+}
+
+#principalArticle .description h1{
+    color: rgb(42, 10, 73);
+    margin-bottom: 0;
+    margin-top: 2px;
+    font-size: 38px;
+}
+
+#principalArticle .description p{
+    font-size: 14px;
+    padding: 1vw;
+}
+@media screen and (max-width: 680px) {
+    #principalArticle .image img {
+        width: 100%;
+    }
+
+    #principalArticle {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,39 @@
+.episodeCard{
+    border: 1px solid #000;
+    width: 20%;
+    margin: 10px;
+    padding: 10px;
+}
+
+.charactersCard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.img-character {
+    width: 40%;
+    margin: 20px 0px;
+}
+
+.btn-characters {
+    background-color: rgb(255, 66, 66);
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 5px 20px;
+    font-weight: bold;
+}
+
+.btn-characters:active {
+    transform: scale(0.98);
+}
+
+@media screen and (max-width: 680px) {
+    .img-character {
+        width: 100%;
+    }
+
+    .episodeCard {
+        min-width: 200px;
+    }
+}

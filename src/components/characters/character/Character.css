@@ -1,0 +1,49 @@
+.characterCard {
+    display: flex;
+    background-color: aquamarine;
+    height: 40vh;
+    width: 28vw;
+    margin: 1.5vw;
+    border-radius: 5vh;
+    -webkit-border-radius: 5vh;
+    -moz-border-radius: 5vh;
+    -o-border-radius: 5vh;
+    border-radius: 5vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.characterCard .characterImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 14vw;
+    height: 14vw;
+}
+.characterCard .characterImage img{
+    width: 90%;
+    height: 90%;
+}
+
+.characterCard .characterInfo *{
+    margin: 0;
+    text-align: center;
+}
+.characterCard .characterInfo{
+    display: flex;
+    flex-direction: column;
+    width: 12vw;
+    height: 14vw;
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (max-width: 680px) {
+    .characterCard {
+        min-width: 300px;
+    }
+    .characterImage {
+        min-width: 50%;
+        min-height: 50%;
+    }
+}
